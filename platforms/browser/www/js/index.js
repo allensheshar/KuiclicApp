@@ -38,13 +38,27 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
     
-		setTimeout(function(){
+		$(document).ready(function(){
 			
-			$('#start').addClass('hidden');
-			$('#loading').addClass('hidden');
-			$('#login').removeClass('hidden');
+			setTimeout(function(){
+				$('#start').addClass('hidden');
+				$('#loading').addClass('hidden');
+				$('#login').removeClass('hidden');
+			},3000);
 			
-		},3000);
+			$('.callPage').click(function(){
+				
+				var _target=$(this).attr('data-target');
+				var _parent=$(this).closest('div.page');
+				
+				$(_parent).addClass('hidden');
+				$(_target).removeClass('hidden');
+				
+			});
+			
+		});
+	
+		
 		
     }
 };
