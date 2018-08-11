@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="ext/boostrap/css/bootstrap.min.css" />
+    <title>Kuiclic App</title>
+</head>
+
+<body>
+
+	<div id="start" class="start">
+		<div class="logo">
+			<img src="img/default/logo1.png" class="img-responsive" />
+		</div>
+	</div>
+	
+	<div id="loading" class="loading blink">
+		Cargando elementos ....
+	</div>
+	
+	<div id="login" class="page-1 hidden">
+		<div class="header">
+			<img src="img/default/logo2.png" class="img-responsive" />
+		</div>
+		<div class="body">
+			
+			<div class="container-fluid">
+				
+				<div class="col-md-12">
+					<div class="row">
+						<h4><b>Ingresa con tus redes sociales<b/></h4>
+						<button class="btn btn-block btn-lg btn-redes"> 
+							<img src="img/default/facebook.png" class="pull-left" height="48">
+							<span class="text">Ingresar con Facebook</span>
+						</button>
+						<button class="btn btn-block btn-lg btn-redes"> 
+							<img src="img/default/google-plus.png" class="pull-left" height="48">
+							<span class="text">Ingresar con Google+</span>
+						</button>
+					<div>
+					<div class="clearfix">&nbsp;</div>
+				</div>
+				
+				<div class="col-md-12">
+					<div class="row">
+						<h4><b>Accede con tu cuenta Kuiclic<b/></h4>
+						<div class="panel panel-default">
+						  <div class="panel-body">
+							
+							<div class="form-group">
+								<input type="text" class="input-lg form-control" placeholder="Email o Telefono">
+							</div>
+							<div class="form-group">
+								<input type="password" class="input-lg form-control" placeholder="Contraseña">
+							</div>
+							
+							<div class="" align="right" style="padding-bottom:0.5em;">
+								<a href="#" class="">¿Olvidó su contraseña?</a>
+							</div>
+							
+							<button class="btn btn-block btn-lg btn-color1"> 
+								INGRESAR
+							</button>
+							
+							<div class="" align="center" style="padding-top:1.5em;">
+								<a href="#" class="">Crear una nueva cuenta</a>
+							</div>
+							
+						  </div>
+						</div>
+						
+						
+						
+					<div>
+				</div>
+				
+				
+				
+			
+			</div>
+			
+		</div>
+	</div>
+	
+    <script src="ext/jquery/jquery.min.js"></script>
+    <script src="ext/boostrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+	
+</body>
+
+</html>
