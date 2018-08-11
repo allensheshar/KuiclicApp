@@ -59,6 +59,7 @@ body {
 	bottom: 0;
 	padding: 1em;
 	font-family: 'Varela Round', sans-serif;
+	font-size: 1.5em;
 }
 
 .page-1{
@@ -66,7 +67,7 @@ body {
 	background-size: cover;
 	background-repeat: repeat-y;
 	background-position: center;
-	position:fixed;             
+	position:absolute;             
     left:0;
     top:0;
 	bottom: 0;
@@ -74,6 +75,7 @@ body {
     height:100%;
     width:100%;
 	font-family: 'Varela Round', sans-serif !important;
+	overflow-y: auto;
 }
 .page-1 .header {
     background: url(../img/default/background.png) repeat center bottom;
@@ -83,6 +85,7 @@ body {
 .page-1 .body {
     padding: 0.5em;
 	font-family: 'Varela Round', sans-serif !important;
+	overflow-y: auto;
 }
 
 .btn-color1 {
@@ -115,4 +118,13 @@ body {
     padding-top: 0.7em;
     position: relative;
     display: block;
+}
+.form-group {
+    margin-bottom: 2px;
+}
+.checkbox, .radio {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

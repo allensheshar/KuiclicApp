@@ -38,9 +38,12 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    
+	<link rel="stylesheet" type="text/css" href="ext/animate.css" />
 	<link rel="stylesheet" type="text/css" href="ext/boostrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>Kuiclic App</title>
+	
 </head>
 
 <body>
@@ -52,7 +55,7 @@
 	</div>
 	
 	<div id="loading" class="loading blink">
-		Cargando elementos ....
+		Cargando aplicación ....
 	</div>
 	
 	<div id="login" class="page-1 page hidden">
@@ -76,7 +79,7 @@
 								<input type="password" class="input-lg form-control" placeholder="Contraseña">
 							</div>
 							
-							<div class="" align="right" style="padding-bottom:0.5em;">
+							<div class="" align="right" style="padding-bottom:0.5em;padding-top:0.5em;">
 								<a href="#" class="pull-left callPage" data-target="#create">Crear una cuenta</a>
 								<a href="#" class="">¿Olvidó su contraseña?</a>
 							</div>
@@ -125,29 +128,60 @@
 						<div class="panel panel-default">
 						  <div class="panel-body">
 							
-							<div class="form-group">
-								<input type="text" class="input-lg form-control" placeholder="Nombres y Apellidos">
-							</div>
-							<div class="form-group">
-								<input type="text" class="input-lg form-control" placeholder="Email">
-							</div>
-							<div class="form-group">
-								<input type="text" class="input-lg form-control" placeholder="Telefono">
-							</div>
-							<div class="form-group">
-								<input type="password" class="input-lg form-control" placeholder="Contraseña">
-							</div>
-														
-							<button class="btn btn-block btn-lg btn-color1 callPage" data-target="#login"> 
-								CREAR CUENTA
-							</button>
+							<form>
 							
-							<div class="" align="left" style="padding-top:0.5em;">
-								<a href="#" class="callPage" data-target="#login">Regresar al Acceso</a>
-							</div>
+								<div class="form-group">
+									<input type="text" class="input-lg form-control" placeholder="Nombres y Apellidos">
+								</div>
+								<div class="form-group">
+									<input type="text" class="input-lg form-control" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input type="text" class="input-lg form-control" placeholder="Telefono">
+								</div>
+								
+								<div class="row">
+									<div class="form-group col-xs-6">
+										<div class="radio">
+										  <label><input type="radio" name="optradio" checked>Hombre</label>
+										</div>
+									</div>
+									<div class="form-group col-xs-6">
+										<div class="radio">
+										  <label><input type="radio" name="optradio">Mujer</label>
+										</div>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<input type="password" class="input-lg form-control" placeholder="Contraseña">
+								</div>
+								
+								<div class="form-group">
+									<input type="password" class="input-lg form-control" placeholder="Reingresa Contraseña">
+								</div>
+																			
+								<div class="form-group">
+									<div class="checkbox">
+									  <label><input type="checkbox" value="">Acepto los Términos y Condiciones</label>
+									</div>
+								</div>
+														
+							</form>
 							
 						  </div>
 						</div>
+						
+	
+						<div class="btn-group btn-group-lg" role="group" style="width: 100%;">
+							<button class="btn btn-color1 callPage" data-target="#login" style="width: 85%;"> 
+								CREAR CUENTA
+							</button>
+							<button class="btn btn-default callPage" data-target="#login"> 
+								X
+							</button>
+						</div>
+
 
 					</div>
 				</div>

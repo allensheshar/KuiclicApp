@@ -16,6 +16,34 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+$.fn.extend({
+  animateCss: function(animationName, callback) {
+    var animationEnd = (function(el) {
+      var animations = {
+        animation: 'animationend',
+        OAnimation: 'oAnimationEnd',
+        MozAnimation: 'mozAnimationEnd',
+        WebkitAnimation: 'webkitAnimationEnd',
+      };
+
+      for (var t in animations) {
+        if (el.style[t] !== undefined) {
+          return animations[t];
+        }
+      }
+    })(document.createElement('div'));
+
+    this.addClass('animated ' + animationName).one(animationEnd, function() {
+      $(this).removeClass('animated ' + animationName);
+
+      if (typeof callback === 'function') callback();
+    });
+
+    return this;
+  },
+});
+ 
 var app = {
     // Application Constructor
     initialize: function() {
@@ -41,18 +69,28 @@ var app = {
 		$(document).ready(function(){
 			
 			setTimeout(function(){
-				$('#start').addClass('hidden');
+				
 				$('#loading').addClass('hidden');
+				$('#start').animateCss('fadeOutLeft', function() {
+					$('#start').addClass('hidden');
+				});
+				
 				$('#login').removeClass('hidden');
-			},3000);
+				$('#login').animateCss('fadeInRight');
+				
+			},6000);
 			
 			$('.callPage').click(function(){
 				
-				var _target=$(this).attr('data-target');
 				var _parent=$(this).closest('div.page');
+				var _target=$(this).attr('data-target');
 				
-				$(_parent).addClass('hidden');
+				$(_parent).animateCss('fadeOutLeft', function() {
+					$(_parent).addClass('hidden');
+				});
+				
 				$(_target).removeClass('hidden');
+				$(_target).animateCss('fadeInRight');
 				
 			});
 			
