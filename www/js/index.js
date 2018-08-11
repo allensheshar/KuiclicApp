@@ -78,7 +78,7 @@ var app = {
 				$('#login').removeClass('hidden');
 				$('#login').animateCss('fadeInRight');
 				
-			},6000);
+			},1000);
 			
 			$('.callPage').click(function(){
 				

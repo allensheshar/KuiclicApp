@@ -15,6 +15,8 @@ body {
     margin:0px;
     padding:0px;
     width:100%;
+	overflow-x: hidden;
+    overflow-y: auto;
 }
 
 @keyframes fade {
@@ -82,7 +84,12 @@ body {
     height: 115px;
     padding: 0.5em;
 }
-.page-1 .body {
+.page-2 .header {
+    background: url(../img/default/background.png) repeat center bottom;
+    height: 50px;
+    padding: 0.5em;
+}
+.page-1 .body,.page-2 .body {
     padding: 0.5em;
 	font-family: 'Varela Round', sans-serif !important;
 	overflow-y: auto;
@@ -127,4 +134,89 @@ body {
     display: block;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.avatar{
+    width: 80px;
+    height: 80px;
+	margin-right: 0.5em;
+}
+.logitem{
+    width: 50px;
+    height: 50px;
+	margin-right: 0.5em;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.title1{
+	color: #693484;
+	font-weight: bold;
+}
+
+.btn-color2 {
+  color: #fff;
+  background: #63a93b;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+.btn-color2:hover {
+  color: #fff;
+  background: #63a93b;
+}
+
+.btn-color3 {
+  color: #fff;
+  background: red;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+.btn-color3:hover {
+  color: #fff;
+  background: red;
+}
+
+.item-box{
+	position: relative;
+	margin-bottom: 0.5em;
+}
+
+.item-box .body,.item-box .body-tmp {
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid 1px #fff;
+}
+
+.item-box .body:hover {
+    background-color: #f3e8f9;
+    border-radius: 10px;
+    border: solid 1px #e3c7f3;
+}
+
+.actions{
+	position: absolute;
+	right:20px;
+	top: 10px;
+}
+.page-header-mini1 {
+    padding-bottom: 0px;
+    margin: 3px 0 6px;
+    border-bottom: 1px solid #693484;
+	color: #693484;
+	font-size: 9px;
+}
+.page-header-mini2 {
+    padding-bottom: 0px;
+    margin: 3px 0 6px;
+    border-bottom: 1px solid #333333;
+	color: #333333;
+	font-size: 9px;
 }
