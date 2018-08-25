@@ -376,20 +376,6 @@ module.exports = [
         "merges": [
             "window.FileSystem"
         ]
-    },
-    {
-        "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
-        "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
-        "pluginId": "phonegap-plugin-barcodescanner",
-        "clobbers": [
-            "cordova.plugins.barcodeScanner"
-        ]
-    },
-    {
-        "file": "plugins/phonegap-plugin-barcodescanner/src/browser/BarcodeScannerProxy.js",
-        "id": "phonegap-plugin-barcodescanner.BarcodeScannerProxy",
-        "pluginId": "phonegap-plugin-barcodescanner",
-        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -403,8 +389,7 @@ module.exports.metadata =
     "cordova-plugin-device-motion": "1.2.5",
     "cordova-plugin-device-orientation": "1.0.7",
     "cordova-plugin-dialogs": "1.2.1",
-    "cordova-plugin-file": "6.0.1",
-    "phonegap-plugin-barcodescanner": "8.0.0"
+    "cordova-plugin-file": "6.0.1"
 }
 // BOTTOM OF METADATA
 });

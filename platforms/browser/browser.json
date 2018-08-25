@@ -15,10 +15,6 @@
             {
               "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
               "count": 1
-            },
-            {
-              "xml": "<feature name=\"BarcodeScanner\"><param name=\"browser-package\" value=\"BarcodeScanner\" /></feature>",
-              "count": 1
             }
           ]
         }
@@ -51,9 +47,6 @@
       "PACKAGE_NAME": "com.phonegap.kuiclic"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.phonegap.kuiclic"
-    },
-    "phonegap-plugin-barcodescanner": {
       "PACKAGE_NAME": "com.phonegap.kuiclic"
     }
   },
@@ -435,20 +428,6 @@
       "merges": [
         "window.FileSystem"
       ]
-    },
-    {
-      "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
-      "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
-      "pluginId": "phonegap-plugin-barcodescanner",
-      "clobbers": [
-        "cordova.plugins.barcodeScanner"
-      ]
-    },
-    {
-      "file": "plugins/phonegap-plugin-barcodescanner/src/browser/BarcodeScannerProxy.js",
-      "id": "phonegap-plugin-barcodescanner.BarcodeScannerProxy",
-      "pluginId": "phonegap-plugin-barcodescanner",
-      "runs": true
     }
   ],
   "plugin_metadata": {
@@ -460,7 +439,6 @@
     "cordova-plugin-device-motion": "1.2.5",
     "cordova-plugin-device-orientation": "1.0.7",
     "cordova-plugin-dialogs": "1.2.1",
-    "cordova-plugin-file": "6.0.1",
-    "phonegap-plugin-barcodescanner": "8.0.0"
+    "cordova-plugin-file": "6.0.1"
   }
 }

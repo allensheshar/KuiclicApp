@@ -30,9 +30,6 @@
     },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.phonegap.kuiclic"
-    },
-    "phonegap-plugin-barcodescanner": {
-      "PACKAGE_NAME": "com.phonegap.kuiclic"
     }
   },
   "dependent_plugins": {
